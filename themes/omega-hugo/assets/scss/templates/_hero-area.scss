@@ -1,0 +1,293 @@
+.hero-slider-wrapper {
+	position: relative;
+	z-index: 5;
+
+	.item {
+		position: relative;
+		overflow: hidden;
+
+		.item-image {
+			position: relative;
+			width: 70%;
+			margin-left: auto;
+
+			img {
+				width: 100%;
+			}
+
+			&::before {
+				content: '';
+				background: #0a0f61; /*#0a0f61 fondo en la foto*/
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: .28;
+			}
+
+			&:after {
+				background: #38396B;
+			}
+
+			@extend .image-reveal;
+		}
+
+		.content {
+			position: absolute;
+			top: 33%;
+			left: 13%;
+
+			@include desktop {
+				top: 20%;
+			}
+
+			@include mobile {
+				top: 0;
+			}
+
+			h2 {
+				font-weight: 600;
+				line-height: 110px;
+				font-size: 80px; /*letra titulo*/
+				letter-spacing: 1px;
+				line-height: 1;
+				margin-bottom: 20px;
+				color:#D4AF37; /*color titulo*/
+
+				span {
+					clip-path: inset(0 100% 0 0);
+				}
+
+				@include desktop-lg {
+					font-size: 60px;
+					line-height: 70px;
+					letter-spacing: 1px;
+				}
+
+				@include tablet {
+					font-size: 35px;
+					line-height: 40px;
+				}
+			}
+
+			h3 {
+				margin-bottom: 95px;
+				letter-spacing: 2px;
+				font-weight: 400;
+				font-size: 20px;
+				font-family: $secondary-font;
+
+				@include desktop-lg {
+					font-size: 20px;
+					margin-bottom: 50px;
+				}
+
+				@include tablet {
+					font-size: 16px;
+					letter-spacing: 1px;
+					margin-bottom: 30px;
+				}
+			}
+
+			.hero-btn {
+				padding: 25px 50px;
+				font-weight: 600;
+				color: $white;
+				border-radius: 0;
+				border: none;
+				letter-spacing: 2px;
+				background: $btn-color;
+
+				@include desktop {
+					padding: 20px 30px;
+				}
+
+				@include mobile {
+					padding: 15px 25px;
+				}
+			}
+		}
+	}
+
+	.slick-slide {
+		outline: 0;
+	}
+
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		cursor: pointer;
+		z-index: 5;
+		background: transparent;
+		border: none;
+		outline: none;
+
+		i {
+			color: $white;
+			opacity: .33;
+			font-size: 25px;
+
+			@include tablet {
+				font-size: 20px;
+			}
+		}
+
+		&:hover {
+			i {
+				opacity: 1;
+			}
+		}
+	}
+
+	.slick-next {
+		right: 4%;
+		bottom: 5%;
+	}
+
+	.slick-prev {
+		right: 6%;
+		bottom: 5%;
+	}
+}
+
+.scroll {
+	height: 70px;
+	overflow: hidden;
+
+	h6 {
+		transform: rotate(-90deg);
+		letter-spacing: 2px;
+		position: relative;
+		font-size: 13px;
+		margin-top: 20px;
+		font-family: $secondary-font;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 30px;
+			height: 1px;
+			background: #9ea0c9;
+			left: 48%;
+			top: -4px;
+			overflow: hidden;
+			animation-name: scroll_animation;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+	}
+}
+
+@keyframes scroll_animation {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-200%);
+	}
+}
+
+.faq{
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  z-index: 1;
+  @include desktop{
+      padding-top: 100px;
+      margin-bottom: 335px;
+  }
+  @include tablet{
+      padding-top: 70px;
+  }
+  @include mobile{
+      margin-bottom: 320px;
+  }
+  .section-title{
+      position: absolute;
+      z-index: 3;
+      transform: rotate(-90deg);
+      left: -95px;
+      top: 180px;
+      @include desktop {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: rotate(0);
+          margin-bottom: 30px;
+      }
+      span{
+          font-size: 17px;
+          color: $white;
+          letter-spacing: 12px;
+      }
+      &:before{
+          position: absolute;
+          width: 30px;
+          height: 1px;
+          content: '';
+          bottom: -9px;
+          right: -65%;
+          background: $white;
+          @include desktop {
+              content: none;
+          }
+      }
+  }
+      .text-block{
+        position: relative;
+        margin-bottom: 240px;
+        @include desktop{
+            margin-bottom: 150px;
+        }
+        @include mobile{
+            margin-bottom: 50px;
+        }
+        z-index: 3;
+        h2{
+            position: relative;
+            margin-bottom: 42px;
+            font-size: 60px;
+            line-height: 65px;
+            letter-spacing: 1px;
+            span{
+                clip-path: inset(0 100% 0 0);
+                text-transform: capitalize;
+            }
+            @include desktop {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @include tablet{
+                font-size: 35px;
+                line-height: 40px;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                width: 130px;
+                height: 1px;
+                background: $white;
+                left: 0;
+                bottom: -20px;
+            }
+        }
+        p{
+            font-size: 20px;
+            line-height: 40px;
+            letter-spacing: 1px;
+            max-width: 80%;
+            @include tablet{
+                font-size: 16px;
+                line-height: 25px;
+                max-width: 100%;
+            }
+        }
+    }
+
+
+  color:red;
+  font-size: 24px;
+}

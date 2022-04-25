@@ -1,0 +1,108 @@
+#################### Banner #####################
+banner:
+  enable : true
+  title : "CERCAPITAL"
+  content : "Productos de Alto Rendimiento"
+  image : "images/hero-image/las-mercedes.jpeg"
+  button:
+    enable : false
+    label : "QUÉ HACEMOS"
+    link : "#products"
+
+#################### Mission #####################
+mission:
+  enable : true
+  title : "QUIÉNES SOMOS"
+  section : "RENDIMIENTO" #.section-title en plantilla
+  content : "<br>CERCAPITAL es una compañía de asesoría financiera que ofrece diversas oportunidades de inversión de acuerdo a los objetivos y perfiles de nuestros clientes.  Nuestro estricto sistema de inversiones y funcionamiento nos permite ofrecer una oportunidad para inversionistas que deseen colocar capital a trabajar para ellos sin tener las responsabilidades o riesgos que implican el manejo directo de activos sin el conocimiento o el tiempo necesarios. De esta manera, el capital recibido puede entrar directamente en cualquiera de las líneas de negocio que CERCAPITAL se encuentre trabajando y así generar un retorno que el cliente ya puede ver reflejado en su cuenta desde el primer mes. En la actualidad nos hemos constituido en una interesante propuesta de servicios que sigue creciendo junto una cartera de clientes 100% satisfechos, consolidándonos  además como una de las pocas propuestas del mercado que ofrecen retorno inmediato. <br> Le invitamos a ser parte de este exclusivo grupo de inversionistas que han decidido junto con nosotros, construir un presente y futuro sólidos para ellos y sus familias."
+  video_thumb: ""
+  video_id: ""
+
+#################### Vission #####################
+vision:
+  enable : true
+  section : "VENTAJAS"
+  vision_item:
+  - title : "Experiencia"
+    image : "images/vision/vision-01.jpg"
+    content : "Experiencia, confianza, solidez y ética, probadas en <br> casi 10 años de servicio a nuestros clientes"
+
+  - title : "Opciones"
+    image : "images/vision/vision-02.jpg"
+    content : "Múltiples opciones para diversificar la cartera de <br>inversión, disminuyendo así los riesgos y maximizando<br> la seguridad y rentabilidad"
+
+  - title : "Beneficios"
+    image : "images/vision/vision-03.jpg"
+    content : "Beneficio de participar de las ventajas que ofrecen los<br> distintos mercados, acompañados de nosotros"
+
+  - title : "Posibilidades"
+    image : "images/vision/vision-04.jpg"
+    content : "Posibilidad de ingresar con montos accesibles sin <br>comisiones ni obligaciones"
+
+  - title : "Liquidez"
+    image : "images/vision/vision-05.jpg"
+    content : "Liquidez que permite el retiro del capital de manera <br> inmediata en caso de ser requerido por el cliente"
+
+  - title : "Planes de Inversión"
+    image : "images/vision/vision-06.jpg"
+    content : "Servicio personalizado y plan de inversión adaptado al <br> análisis y expectativas de cada cliente"
+
+  - title : "Gestión de Riesgo"
+    image : "images/vision/vision-07.jpg"
+    content : "Estricta gestión de riesgo que permite obtener el máximo <br>beneficio de las distintas propuestas ofrecidas"
+
+  - title : "Plena Satisfacción"
+    image : "images/vision/vision-08.jpg"
+    content : "Contamos con 100% de clientes satisfechos"
+
+#################### product ####################
+product:
+  enable : true
+  section : "Propuestas"
+  title : "PROPUESTAS DE INVERSIÓN "
+  content : ""
+  product_item:
+  - title : "Mercado de valores"
+    image : "images/product/product-06.jpg"
+    content : "Operamos carteras diversificadas de stock y derivados en el mercado de valores norteamericano, buscando obtener la mayor rentabilidad para nuestros clientes, ofreciendo un modelo de renta variable e interés compuesto que representa grandes beneficios al mediano y largo plazo."
+    project_url : ""
+
+  - title : "Criptoactivos y Finazas Descentralizadas"
+    image : "images/product/product-04.jpg"
+    content : "En las inversiones, el punto más importante es tener clara la expectativa del cliente, por lo tanto, nos esforzamos en conocerlo, entenderlo y apoyarlo en el logro de sus objetivos. De esta manera elaboramos el plan de inversión más adecuado que cumplacon los requerimientos y necesidades planteados."
+    project_url : "#"
+
+  - title : "Real Estate"
+    image : "images/product/product-03-2.jpg"
+    content : "Evaluamos proyectos de inversión inmobiliaria nacional e internacional que una vez adquiridos puedan ser gestionados por nosotros o nuestros aliados y que permitan obtener un rápido retorno y devolución del capital para nuestros inversionistas."
+    project_url : "#"
+
+  - title : "Negocios en marcha"
+    image : "images/product/product-02-2.jpg"
+    content : "Estudiamos modelos de negocios comerciales ya establecidos que proyecten un flujo de caja o retorno interesante y que puedan ser adquiridos y gestionados por nosotros mismos, garantizando así la seguridad de la gestión y la protección del capital y los rendimientos de nuestros clientes."
+    project_url : ""
+
+  - title : "Venture Capital"
+    image : "images/product/product-05.jpg"
+    content : "Evaluamos startups de alto impacto en función de la idea, business canvas, equipo y mercado objetivo a manera de apoyar al ecosistema emprendedor mediante el consenso y participación de nuestros inversores así como también mediante el levantamiento de capital a través de las finanzas descentralizadas. De esta manera brindamos una oportunidad a los inversionistas de participar en un mercado de altísimo retorno de la mano de un equipo experto que evalúa los distintos proyectos y su viabilidad."
+    project_url : "#"
+
+
+
+###################### Contact ####################
+contact:
+  enable : true
+  section : "CONTACTO"
+  title : "contáctanos"
+  image : "images/map-bg.jpg"
+  content : "Puede contactarnos Blog Dr. Salud Financiera"
+
+
+################### call to action #################
+call_to_action:
+  enable : true
+  title : "acceso al sistema"
+  button_label : "ingreso"
+  button_link : "https://cercapital.com/apl/login"
+
+

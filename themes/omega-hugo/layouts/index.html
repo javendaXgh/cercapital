@@ -1,0 +1,268 @@
+{{ define "main" }}
+
+{{ if site.Data.homepage.banner.enable }}
+{{ with site.Data.homepage.banner }}
+<section class="hero-slider">
+  <div class="container-fluid p-0 m-0">
+    <div class="row m-0">
+      <div class="col-12 p-0 ml-auto">
+        <div class="hero-slider-wrapper">
+          <div class="item">
+            <div class="item-image image-reveal" style="animation-delay: 2s;">
+              <img src="{{ .image | absURL }}" alt="slider-image">
+            </div>
+            <div class="content">
+              <h2>
+                <span class="rev">
+                  {{.title | markdownify}}
+                </span>
+              </h2>
+              <h3>{{ .content | markdownify }}</h3>
+              {{ if .button.enable }}
+              {{ with .button }}
+              <a href="{{ .link | absURL }}" class="hero-btn btn page-scroll">{{.label}}</a>
+              {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <div class="scroll">
+          <h6>SCROLL</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.mission.enable }}
+{{ with site.Data.homepage.mission }}
+<section class="mission" id="mission">
+  <div class="bg">
+    <img src="{{`images/section-bg.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="right-shape">
+    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.vision.enable }}
+{{ with site.Data.homepage.vision }}
+<section class="vision" id="ventajas">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{ .section | markdownify }}</span>
+        </div>
+        <div class="visions">
+          {{ range .vision_item }}
+          <div class="vision-item">
+            <div class="image image-reveal">
+              <img src="{{ .image | absURL }}" class="img-fluid" alt="vision-thumb">
+            </div>
+            <div class="text-content">
+              <h3>{{ .title | markdownify }}</h3>
+              <p>{{ .content | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.product.enable }}
+{{ with site.Data.homepage.product }}
+<section class="products" id="propuestas">
+  <div class="bg">
+    <img src="{{`images/section-bg-2.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="left-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section | markdownify }}</span>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="text-block">
+          <h2><span class="rev">{{ .title | markdownify }}</span>
+          </h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0">
+    <div class="row m-0">
+      <div class="col-lg-10 ml-auto p-0">
+        <div class="product-slider-wrapper">
+          {{ range .product_item }}
+          <div class="product-item">
+            <img src="{{ .image | absURL }}" alt="product-image">
+            <div class="overlay">
+              <div class="content">
+                <h5>{{ .title | markdownify }}</h5>
+                <p>{{ .content | markdownify }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+
+
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="col-8">
+      <br><br><br><br><br><br><br>
+      <div id="preguntas-frecuentes" class="contact">
+        <h2>Preguntas Frecuentes</h2>
+        <ol style="list-style-type: decimal">
+          <br>
+          <li><p>¿Por qué trabajar con CERCAPITAL?</p>
+
+          <p>CERCAPITAL pone a su disposición una plataforma de múltiples opciones
+          de inversión en las que el inversionista puede participar llevado de la
+          mano de nosotros para alcanzar sus objetivos.</p></li>
+          <li><p>¿En qué consiste la personalización del servicio?</p>
+          <p>En las inversiones, el punto más importante es tener clara la
+          expectativa del cliente, por lo tanto, nos esforzamos en conocerlo,
+          entenderlo y apoyarlo en el logro de sus objetivos. De esta manera
+          elaboramos el plan de inversión más adecuado que cumpla con los
+          requerimientos y necesidades planteados.</p></li>
+          <li><p>¿Cómo se garantiza el rendimiento ofrecido?</p>
+          <p>Las finanzas descentralizadas nos permiten operar como proveedores de
+          liquidez del mercado, obteniendo bandas de renta fija que protegemos con
+          operaciones de cobertura de riesgo. De esta manera garantizamos los
+          rendimientos ofrecidos independientemente de las fluctuaciones de los
+          precios del activo en el mercado.</p></li>
+          <li><p>¿Genera impuestos?</p>
+          <p>No genera impuestos si usted no es residente de los Estados Unidos o
+          Panamá.</p></li>
+          <li><p>¿Genera comisiones?</p>
+          <p>Más allá de las ocasionadas por las transacciones bancarias, los
+          servicios de CERCAPITAL no generan comisión.</p></li>
+          <li><p>¿Existe un contrato?</p>
+          <p>Sí. Existe un contrato de servicios que establece todas las pautas de
+          gestión y servicios.</p></li>
+          <li><p>¿Puedo retirarme cuando desee?</p>
+          <p>Sí, si se encuentra dentro de la modalidad de mercado de valores o
+          DEFI.</p></li>
+          <li><p>¿Es confidencial?</p>
+          <p>Sí, absolutamente.</p></li>
+          <li><p>¿En dónde se recibe el retorno?</p>
+          <p>Donde el cliente lo indique.</p></li>
+          <li><p>Monto mínimo de inversión</p>
+          <p>Desde $1000.</p></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ if site.Data.homepage.contact.enable }}
+{{ with site.Data.homepage.contact }}
+<div class="contact" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{ .section | markdownify }}</span>
+        </div>
+      </div>
+      <div class="col-lg-7 ml-auto">
+        <div class="text-block">
+          <h2><span class="rev">{{ .title | markdownify }}</span></h2>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-div">
+    {{ with site.Params.map }}
+    <div id="map" data-center-lat="{{.map_center_lat}}" data-center-lng="{{.map_center_lng}}" data-position-lat="{{.map_position_lat}}" data-position-lng="{{.map_position_lng}}" data-marker="{{.map_marker | absURL }}" data-name="{{site.Title}}"></div>
+    {{ end }}
+    <div class="office">
+      <div class="contents">
+        <img src="{{ .image |absURL}}" alt="office">
+        <div class="address">
+          <h2>{{ site.Params.contact_info | markdownify}}</h2>
+          <ul class="social-list list-inline">
+            {{ range site.Params.social }}
+            <li class="list-inline-item">
+              <a href="{{ .link | safeURL }}" target="_blank">
+                <i class="fa {{ .icon }}"></i>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
+
+
+{{ if site.Data.homepage.call_to_action.enable }}
+{{ with site.Data.homepage.call_to_action }}
+<section class="clientes" id="clientes">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+          <footer class="footer">
+            <div class="section-title">
+          	  <div class="call-to-action text-center">
+          		  <h2>{{ .title | markdownify }}</h2>
+          		  <a href="{{.button_link | absURL }}">{{.button_label}}</a>
+          	  </div>
+        	 </div>
+        	</footer>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+{{ end }}

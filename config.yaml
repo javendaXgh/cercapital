@@ -1,0 +1,69 @@
+baseURL: https://cercapital.com
+title: CERCAPITAL
+theme: omega-hugo
+googleAnalytics: ''
+markup:
+  goldmark:
+    renderer:
+      unsafe: yes
+menu:
+  main:
+    - name: Home
+      pre: ''
+      url: /
+      weight: 1
+    - name: Nosotros
+      pre: '#'
+      url: mission
+      weight: 2
+    - name: Ventajas
+      pre: '#'
+      url: ventajas
+      weight: 3
+    - name: Propuestas
+      pre: '#'
+      url: propuestas
+      weight: 4
+    - name: FAQ
+      pre: '#'
+      url: faq
+      weight: 5
+    - name: Contacto
+      pre: '#'
+      url: contact
+      weight: 6
+    - name: Zona Clientes
+      pre: '#'
+      url: clientes
+      weight: 7
+params:
+  author: CERCAPITAL
+  contact_info: Caracas, Las Mercedes
+  cookies:
+    enable: yes
+    expire_days: 2
+  description: inversiones rendimiento
+  logo: images/logo.png
+  logo_width: 120px
+  map:
+    enable: no
+    gmap_api: https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw
+    map_center_lat: '10.4807328'
+    map_center_lng: '-66.8583386'
+    map_marker: images/map-marker.png
+    map_position_lat: '10.4807328'
+    map_position_lng: '-66.8583386'
+  preloader: yes
+  social:
+    - icon: fa-facebook
+      link: '#'
+      title: facebook
+    - icon: fa-twitter
+      link: '#'
+      title: twitter
+    - icon: fa-instagram
+      link: '#'
+      title: instagram
+    - icon: fa-linkedin
+      link: '#'
+      title: linkedin
